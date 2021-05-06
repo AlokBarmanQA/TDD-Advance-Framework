@@ -7,8 +7,8 @@
 	</listeners>
   <test thread-count="5" name="Test">
     <classes>
-
       <class name="tests.OrangeHRM_Login_Page_Test"/>
+      <class name="tests.OrangeHRM_Home_Page_Test"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -10,7 +10,7 @@
       <class name="tests.OrangeHRM_Login_Page_Test">
         <methods>
           <include name="tearDown"/>
-          <include name="orangeHRMLoginTest"/>
+          <include name="orangeHRMLoginTestWithValidCredential"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- tests.OrangeHRM_Login_Page_Test -->

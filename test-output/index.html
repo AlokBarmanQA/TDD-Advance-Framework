@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,46 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.OrangeHRM_Login_Page_Test" hash-for-method="orangeHRMLoginTest">orangeHRMLoginTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.OrangeHRM_Home_Page_Test" hash-for-method="alert_popup_handling">alert_popup_handling</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.OrangeHRM_Login_Page_Test" hash-for-method="orangeHRMLoginTestWithEmptyCredentials">orangeHRMLoginTestWithEmptyCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.OrangeHRM_Login_Page_Test" hash-for-method="orangeHRMLoginTestWithEmptyPassword">orangeHRMLoginTestWithEmptyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.OrangeHRM_Login_Page_Test" hash-for-method="orangeHRMLoginTestWithEmptyUsername">orangeHRMLoginTestWithEmptyUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.OrangeHRM_Login_Page_Test" hash-for-method="orangeHRMLoginTestWithInvalidCredential">orangeHRMLoginTestWithInvalidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.OrangeHRM_Login_Page_Test" hash-for-method="orangeHRMLoginTestWithValidCredential">orangeHRMLoginTestWithValidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,26 +144,64 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">tests.OrangeHRM_Login_Page_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="orangeHRMLoginTest">
-                  </a> <!-- orangeHRMLoginTest -->
-                  <span class="method-name">orangeHRMLoginTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at tests.OrangeHRM_Login_Page_Test.orangeHRMLoginTest(OrangeHRM_Login_Page_Test.java:18)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
+                  <a name="orangeHRMLoginTestWithEmptyCredentials">
+                  </a> <!-- orangeHRMLoginTestWithEmptyCredentials -->
+                  <span class="method-name">orangeHRMLoginTestWithEmptyCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="orangeHRMLoginTestWithEmptyPassword">
+                  </a> <!-- orangeHRMLoginTestWithEmptyPassword -->
+                  <span class="method-name">orangeHRMLoginTestWithEmptyPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="orangeHRMLoginTestWithEmptyUsername">
+                  </a> <!-- orangeHRMLoginTestWithEmptyUsername -->
+                  <span class="method-name">orangeHRMLoginTestWithEmptyUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="orangeHRMLoginTestWithInvalidCredential">
+                  </a> <!-- orangeHRMLoginTestWithInvalidCredential -->
+                  <span class="method-name">orangeHRMLoginTestWithInvalidCredential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="orangeHRMLoginTestWithValidCredential">
+                  </a> <!-- orangeHRMLoginTestWithValidCredential -->
+                  <span class="method-name">orangeHRMLoginTestWithValidCredential</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.OrangeHRM_Home_Page_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="alert_popup_handling">
+                  </a> <!-- alert_popup_handling -->
+                  <span class="method-name">alert_popup_handling</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -156,6 +219,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.OrangeHRM_Login_Page_Test&quot;/&gt;
+      &lt;class name=&quot;tests.OrangeHRM_Home_Page_Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -169,7 +233,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,16 +259,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'orangeHRMLoginTest')
+data.setCell(0, 1, 'orangeHRMLoginTestWithValidCredential')
 data.setCell(0, 2, 'tests.OrangeHRM_Login_Page_Test')
-data.setCell(0, 3, 1315);
+data.setCell(0, 3, 1865);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'alert_popup_handling')
+data.setCell(1, 2, 'tests.OrangeHRM_Home_Page_Test')
+data.setCell(1, 3, 1402);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'orangeHRMLoginTestWithInvalidCredential')
+data.setCell(2, 2, 'tests.OrangeHRM_Login_Page_Test')
+data.setCell(2, 3, 1092);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'orangeHRMLoginTestWithEmptyPassword')
+data.setCell(3, 2, 'tests.OrangeHRM_Login_Page_Test')
+data.setCell(3, 3, 361);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'orangeHRMLoginTestWithEmptyUsername')
+data.setCell(4, 2, 'tests.OrangeHRM_Login_Page_Test')
+data.setCell(4, 3, 358);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'orangeHRMLoginTestWithEmptyCredentials')
+data.setCell(5, 2, 'tests.OrangeHRM_Login_Page_Test')
+data.setCell(5, 3, 324);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -236,14 +320,75 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">orangeHRMLoginTest</span>
-                <span class="method-start">6811 ms</span>
+                <span class="method-name">orangeHRMLoginTestWithEmptyCredentials</span>
+                <span class="method-start">7153 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8750 ms</span>
+                <span class="method-start">7486 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">7893 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">orangeHRMLoginTestWithEmptyPassword</span>
+                <span class="method-start">10783 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11146 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">11426 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">orangeHRMLoginTestWithEmptyUsername</span>
+                <span class="method-start">14213 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14573 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">14828 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">orangeHRMLoginTestWithInvalidCredential</span>
+                <span class="method-start">25551 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26643 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">26739 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">orangeHRMLoginTestWithValidCredential</span>
+                <span class="method-start">30455 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32321 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.OrangeHRM_Home_Page_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">33488 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">alert_popup_handling</span>
+                <span class="method-start">36487 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">37898 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

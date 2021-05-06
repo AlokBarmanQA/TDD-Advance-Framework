@@ -13,8 +13,6 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<maven.compiler.source>1.8</maven.compiler.source>
 	</properties>
 	<build>
 		<plugins>
@@ -37,8 +35,7 @@
 					</systemPropertyVariables>
 
 					<suiteXmlFiles>
-						<!-- If you want to make pom.xml as parameterised (use for different 
-							testng.xml files -->
+						<!-- If you want to make pom.xml as parameterised (use for different testng.xml files -->
 						<!-- Then use below parameterised line for suiteXmlFile -->
 						<!-- <suiteXmlFile>${testngName}</suiteXmlFile> -->
 						<!-- then use below maven command -->

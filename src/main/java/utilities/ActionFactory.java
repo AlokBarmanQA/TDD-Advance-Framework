@@ -1,6 +1,8 @@
 package utilities;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -95,5 +97,26 @@ public class ActionFactory {
 			ExtentFactory.getInstance().getExtent().log(Status.FAIL, fieldName+" ==> Text unable to retrieve due to exception "+e);
 		}
 		return text;
+	}
+
+	public boolean isAlertPresent() {
+	      try{
+	    	  DriverFactory.getInstance().getDriver().switchTo().alert();
+	          return true;
+	      }
+	      catch(NoAlertPresentException ex){
+	          return false;
+	      }
+	}
+	public void custom_alert_popup_handle() {
+	    if(isAlertPresent()){
+			try {
+				Alert alert = DriverFactory.getInstance().getDriver().switchTo().alert();
+				alert.accept();
+				ExtentFactory.getInstance().getExtent().log(Status.PASS, "Alert is accepted");
+			} catch (Exception e) {
+				ExtentFactory.getInstance().getExtent().log(Status.FAIL, "Alert is unable to accept "+" due to: "+e);
+			}
+	    }
 	}
 }

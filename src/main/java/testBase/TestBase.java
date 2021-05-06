@@ -8,9 +8,9 @@ import utilities.ActionFactory;
 import utilities.PropertiesReader;
 
 public class TestBase extends ActionFactory{
-	
+
 	BrowserFactory browserFactory = new BrowserFactory();
-	
+
 	@BeforeMethod
 	public void launchBrowser() {
 		String browser = PropertiesReader.getPropertyValueByKey("browser");
@@ -21,7 +21,7 @@ public class TestBase extends ActionFactory{
 		driver.manage().window().maximize();
 		driver.navigate().to(url);
 	}
-	
+
 	@AfterMethod
 	public void tearDown() {
 		DriverFactory.getInstance().closeCurrentBrowserInstance();
